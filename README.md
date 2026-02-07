@@ -26,8 +26,8 @@ A patch for optimizing GIMP 3.0+ for Adobe Photoshop users, including features l
 
 This patch is originally intended to work with the Flatpak version of GIMP for Linux, but it can be used in almost any package format with no restriction by extracting the files on the correct folders.
 
-
-### Flatpak (Linux)
+### Linux
+#### Flatpak
 
 In order to install the newest version of PhotoGIMP on your Linux operating system using Flatpak, just follow this simple steps:
 
@@ -40,6 +40,23 @@ In order to install the newest version of PhotoGIMP on your Linux operating syst
 5. You're done, enjoy it! :smile:
 
 <hr>
+
+#### Native installation - manual file replacement
+
+Download the zip release [click here](https://github.com/Diolinux/PhotoGIMP/releases/download/3.0/PhotoGIMP-linux.zip);
+Extract the `3.0` folder from the zip archive to `/home/$USER/.config/GIMP/3.0`, replacing the files;
+
+#### Native installation - automated installer script
+
+It does the same things as manual replacement but automatically;
+
+Copy-paste this to your terminal (no password needed):
+```
+curl -fsSL https://raw.githubusercontent.com/hopsayer/photogimp-installer/add-install-script/scripts/install_photogimp.sh \
+  -o install_photogimp.sh && \
+chmod +x install_photogimp.sh && \
+./install_photogimp.sh
+```
 
 ### Windows
 
